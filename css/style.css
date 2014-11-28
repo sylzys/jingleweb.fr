@@ -3,22 +3,257 @@ body {
   background-size: cover;
   font-family: 'Roboto', sans-serif;
   color: black; }
+  body strong {
+    font-weight: 700; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  width: 15%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 1em 0 0.5em 0; }
 
 nav {
   width: 100%;
   height: 70px;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
-  padding: 0.5em 0 0 0.5em;
+  padding: 0.5em 0.5em 0 1em;
   background: black;
   color: white;
   opacity: 0.8;
   filter: alpha(opacity=80); }
   nav img, nav p, nav ul {
-    display: inline-block;
-    vertical-align: top; }
-  nav img {
-    border-radius: 50%;
-    border: 2px solid white;
-    height: 50px; }
+    display: inline-block; }
+  nav p.site-name {
+    font-size: 24px; }
+    nav p.site-name img {
+      border-radius: 50%;
+      border: 2px solid white;
+      height: 50px;
+      vertical-align: middle;
+      margin-right: 1em; }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 30%; }
+    nav ul li {
+      text-transform: uppercase;
+      font-size: 18px;
+      height: 25px;
+      display: inline-block;
+      margin-right: 1em;
+      cursor: pointer; }
+      nav ul li a {
+        color: white;
+        text-decoration: none; }
+      nav ul li.active, nav ul li:hover {
+        border-bottom: 2px solid #9ab3cf; }
+        nav ul li.active a, nav ul li:hover a {
+          color: #9ab3cf;
+          font-weight: bold; }
+
+#home {
+  height: 100vh; }
+  #home .social {
+    position: absolute;
+    top: 20%;
+    right: 5%; }
+    #home .social ul li {
+      border: 1px solid black;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      margin-right: 0.5em; }
+  #home .content {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 30px; }
+    #home .content .contact-me {
+      padding: 0.5em;
+      margin-top: 1em;
+      cursor: pointer;
+      width: 30%;
+      text-align: center;
+      text-transform: uppercase;
+      border: 2px solid black; }
+      #home .content .contact-me a {
+        text-decoration: none;
+        color: black; }
+  #home .down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -32px; }
+    #home .down img {
+      width: 64px;
+      border: 2px solid black;
+      border-radius: 50%;
+      padding: 0.4em; }
+
+#works {
+  background: #27271f;
+  color: white; }
+  #works h2 {
+    border-bottom: 4px solid white; }
+  #works ul {
+    width: 80%;
+    margin: 0 auto; }
+    #works ul li {
+      display: block;
+      width: 45%;
+      border: 2px solid white;
+      text-align: center;
+      margin-bottom: 3em; }
+      #works ul li.work {
+        position: relative;
+        max-width: 1000px;
+        list-style: none;
+        text-align: center; }
+        #works ul li.work figure {
+          position: relative;
+          overflow: hidden;
+          min-width: 320px;
+          max-width: 480px;
+          max-height: 360px;
+          background: #2f3238;
+          text-align: center;
+          cursor: pointer; }
+          #works ul li.work figure img {
+            position: relative;
+            display: block;
+            min-height: 100%;
+            max-width: 100%;
+            opacity: 0.8; }
+          #works ul li.work figure figcaption {
+            padding: 2em;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.25em;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden; }
+            #works ul li.work figure figcaption:before, #works ul li.work figure figcaption:after {
+              pointer-events: none; }
+            #works ul li.work figure figcaption > a {
+              z-index: 1000;
+              text-indent: 200%;
+              white-space: nowrap;
+              font-size: 0;
+              opacity: 0; }
+          #works ul li.work figure figcaption, #works ul li.work figure figcaption > a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; }
+          #works ul li.work figure h3 {
+            word-spacing: -0.15em;
+            font-weight: 300;
+            font-size: 24px;
+            margin: 0; }
+            #works ul li.work figure h3 span {
+              font-weight: 800; }
+            #works ul li.work figure h3 p {
+              letter-spacing: 1px;
+              font-size: 68.5%;
+              margin: 0; }
+          #works ul li.work figure.effect-sarah {
+            background: #9ab3cf; }
+            #works ul li.work figure.effect-sarah img {
+              max-width: none;
+              width: -webkit-calc(100% + 20px);
+              width: calc(100% + 20px);
+              -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+              transition: opacity 0.35s, transform 0.35s;
+              -webkit-transform: translate3d(-10px, 0, 0);
+              transform: translate3d(-10px, 0, 0);
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden; }
+            #works ul li.work figure.effect-sarah figcaption {
+              text-align: left; }
+            #works ul li.work figure.effect-sarah h3 {
+              position: relative;
+              overflow: hidden;
+              padding: 0.5em 0; }
+              #works ul li.work figure.effect-sarah h3:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: #fff;
+                content: '';
+                -webkit-transition: -webkit-transform 0.35s;
+                transition: transform 0.35s;
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0); }
+            #works ul li.work figure.effect-sarah p {
+              padding: 1em 0;
+              opacity: 0;
+              -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+              transition: opacity 0.35s, transform 0.35s;
+              -webkit-transform: translate3d(100%, 0, 0);
+              transform: translate3d(100%, 0, 0); }
+            #works ul li.work figure.effect-sarah:hover img {
+              opacity: 0.2;
+              -webkit-transform: scale3d(1.1, 1.1, 1);
+              transform: scale3d(1.1, 1.1, 1); }
+            #works ul li.work figure.effect-sarah:hover h3:after {
+              -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+            #works ul li.work figure.effect-sarah:hover p {
+              opacity: 1;
+              -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+  #works #filters {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid white;
+    height: 40px;
+    line-height: 2.5em;
+    margin-bottom: 3em; }
+    #works #filters a {
+      width: 25%;
+      height: 100%;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      padding: 0; }
+      #works #filters a.active, #works #filters a:active, #works #filters a:focus, #works #filters a:hover {
+        background: white;
+        color: black; }
+      #works #filters a:not(:first-child) {
+        margin-left: -4px; }
+
+#about {
+  background: #f1f1f1; }
+  #about h2 {
+    border-bottom: 4px solid black; }
+  #about .content {
+    width: 70%;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 110px; }
+    #about .content .row {
+      display: table-row; }
+      #about .content .row p {
+        display: table-cell;
+        vertical-align: bottom;
+        border: 5px solid black;
+        padding: 0.5em;
+        text-align: center;
+        text-transform: uppercase;
+        height: 250px;
+        background-size: 30%; }
+        #about .content .row p.talks {
+          background: url(../img/talks.png) no-repeat center center; }
+        #about .content .row p.meetups {
+          background: url(../img/ppl.png) no-repeat center center; }

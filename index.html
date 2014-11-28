@@ -4,19 +4,112 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<title>JingleWeb</title>
+	<meta charset="utf-8">
+	<title>JingleWeb</title>
 
 <!--[if lt IE 9]> HTML5Shiv
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav>
-	<img src='img/SZ.png' alt='Sylvain ZYSSMAN'>
-	<p class='site-name'>Sylvain<strong>ZYSSMAN</strong>.fr</p>
-</nav>
+	<nav role='navigation'>
+		<p class='site-name'><img src='img/SZ.png' alt='Sylvain ZYSSMAN'>Sylvain<strong>ZYSSMAN</strong>.fr</p>
+		<ul class='menu'>
+			<li class='active'><a href='#' title='back to top'>home</a></li>
+			<li><a href='#work' title='View my works'>work</a></li>
+			<li><a href='#about' title='Learn more about me'>about me</a></li>
+			<li><a href='#contact' title='Contact me'>contact</a></li>
+		</ul>
+	</nav>
+	<div id='home'>
+		<div class='social'>
+			<ul class='menu'>
+				<li><a href='https://github.com/sylzys' target='blank_' title='View my Github profile'><img src='img/github.png' alt='Github Icon'/></a></li>
+				<li><a href='http://twitter.com/sylzys' target='blank_' title='View my Twitter profile'><img src='img/twitter.png' alt='Twitter Icon'/></a></li>
+				<li><a href='http://fr.linkedin.com/in/sylvainzyssman/' target='blank_' title='View my Linkedin profile'><img src='img/linkedin.png' alt='Linkedin Icon'/></a></li>
+			</ul>
+		</div>
+		<div class='content'>
+			<h1>HELLO WORLD !<br/>I’M SYLVAIN, A FRENCH <strong>FULLSTACK WEB DEVELOPER</strong></h1>
+			<p class='contact-me'><a href='#contact'><strong>contact me</strong></a></p>
+		</div>
+		<p class='down'><img src='img/down-arrow.png' alt='Scroll down' /></p>
+	</div>
+	<div id='works'>
+		<h2>my works</h2>
+		<div id='filters'>
+			<a href='#' class='button active' title='View all Works' data-filter="*">Show all</a>
+			<a href='#' class='button' title='View Front-end Works' data-filter=".front">Front</a>
+			<a href='#' class='button' title='View Back-end Works' data-filter=".back">Back</a>
+			<a href='#' class='button' title='View Mobile Works' data-filter=".mobile">Mobile</a>
+		</div>
+		<ul>
+			<li class='work mobile front back'>
+				<figure class="effect-sarah">
+					<img src="img/tutor.png" alt="Tutor"/>
+					<figcaption>
+						<h3>Tutor <span>Quizz</span></h3>
+						<p>Appli tutor mobile lorem ipsum</p>
+						<a href="#">View more</a>
+					</figcaption>
+				</figure>
+			</li>
+			<li class='work front'>
+				<figure class="effect-sarah">
+					<img src="img/13.jpg" alt="img01"/>
+					<figcaption>
+						<h3>Toto <span>titi</span></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci qui praesentium tempore at, quisquam, expedita sed natus cumque laboriosam</p>
+						<a href="#">View more</a>
+					</figcaption>
+				</figure>
+			</li>
+			<li class='work back'>
+				<figure class="effect-sarah">
+					<img src="img/AP.png" alt="img01"/>
+					<figcaption>
+						<h3>Agent <span>Provocateur</span></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus recusandae, dicta vitae corporis, tempora dolorem blanditiis molestiae</p>
+						<a href="#">View more</a>
+					</figcaption>
+				</figure>
+			</li>
+			<li class='work back front mobile'>
+				<figure class="effect-sarah">
+					<img src="img/SDE.png" alt="img01"/>
+					<figcaption>
+						<h3>Salon de <span>l'étudiant</span></h3>
+						<p>Appli SDE mobile lorem ipsum</p>
+						<a href="#">View more</a>
+					</figcaption>
+				</figure>
+			</li>
+			<li class='work back'>
+				<figure class="effect-sarah">
+					<img src="img/13.jpg" alt="img01"/>
+					<figcaption>
+						<h3>plop <span>lol</span></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus recusandae, dicta vitae corporis, tempora dolorem blanditiis molestiae</p>
+						<a href="#">View more</a>
+					</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</div>
+	<div id="about">
+		<h2>about me</h2>
+		<div class='content'>
+			<div class='row'>
+				<p class='talks'>talks</p>
+				<p class='meetups'>Meetups</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/isotope.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
