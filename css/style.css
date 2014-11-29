@@ -13,6 +13,31 @@ body {
 .red {
   color: #d8230d; }
 
+.social-networks li {
+  border: 2px solid #272728;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 0.5em;
+  cursor: pointer; }
+  .social-networks li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px; }
+  .social-networks li.github {
+    background: transparent url(../img/github.png) no-repeat 45% center/60%; }
+    .social-networks li.github:hover, .social-networks li.github:focus, .social-networks li.github:active {
+      background: transparent url(../img/github-active.png) no-repeat 45% center/60%; }
+  .social-networks li.twitter {
+    background: transparent url(../img/twitter.png) no-repeat center center/60%; }
+    .social-networks li.twitter:hover, .social-networks li.twitter:focus, .social-networks li.twitter:active {
+      background: transparent url(../img/twitter-active.png) no-repeat center center/60%; }
+  .social-networks li.linkedin {
+    background: transparent url(../img/linkedin.png) no-repeat center center/60%; }
+    .social-networks li.linkedin:hover, .social-networks li.linkedin:focus, .social-networks li.linkedin:active {
+      background: transparent url(../img/linkedin-active.png) no-repeat center center/60%; }
+
 h2 {
   text-transform: uppercase;
   font-size: 30px;
@@ -69,26 +94,6 @@ nav {
     position: absolute;
     top: 10%;
     right: 5%; }
-    #home .social ul li {
-      border: 2px solid #272728;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: inline-block;
-      margin-right: 0.5em;
-      cursor: pointer; }
-      #home .social ul li.github {
-        background: transparent url(../img/github.png) no-repeat center center/60%; }
-        #home .social ul li.github:hover, #home .social ul li.github:focus, #home .social ul li.github:active {
-          background: transparent url(../img/github-active.png) no-repeat center center/60%; }
-      #home .social ul li.twitter {
-        background: transparent url(../img/twitter.png) no-repeat center center/60%; }
-        #home .social ul li.twitter:hover, #home .social ul li.twitter:focus, #home .social ul li.twitter:active {
-          background: transparent url(../img/twitter-active.png) no-repeat center center/60%; }
-      #home .social ul li.linkedin {
-        background: transparent url(../img/linkedin.png) no-repeat center center/60%; }
-        #home .social ul li.linkedin:hover, #home .social ul li.linkedin:focus, #home .social ul li.linkedin:active {
-          background: transparent url(../img/linkedin-active.png) no-repeat center center/60%; }
   #home .content {
     position: absolute;
     top: 40%;
@@ -297,7 +302,8 @@ nav {
 #contact {
   background: #272728;
   color: white;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 3em; }
   #contact a {
     color: #d8230d;
     text-decoration: none; }
@@ -320,20 +326,44 @@ nav {
       text-transform: uppercase;
       text-align: left;
       border: none; }
-    #contact .form p {
+    #contact .form .unhappyMessage {
+      color: #d8230d;
+      display: block;
+      margin-bottom: 0.5em; }
+    #contact .form button {
+      border-style: none;
       display: inline-block;
       margin-top: 1em;
+      padding: 0;
       cursor: pointer;
-      width: 60%;
+      width: 50%;
       text-transform: uppercase;
       background: #35383F;
-      text-align: left; }
-      #contact .form p .send {
+      color: white;
+      font-size: 17px;
+      text-align: left;
+      margin-top: 2em; }
+      #contact .form button .send {
         display: inline-block;
-        background: #d8230d url(../img/send.png) no-repeat 60% 40%/60%;
+        background: #d8230d url(../img/send.png) no-repeat 50% 60%/60%;
         width: 40px;
         height: 40px;
         vertical-align: middle;
         margin-right: 1.3em; }
-      #contact .form p:hover .send, #contact .form p:active .send, #contact .form p:focus .send {
-        background: #d8230d url(../img/send-active.png) no-repeat 60% 40%/60%; }
+      #contact .form button:hover .send, #contact .form button:active .send, #contact .form button:focus .send {
+        background: #d8230d url(../img/send-active.png) no-repeat 50% 60%/60%; }
+
+footer {
+  height: 70px; }
+  footer div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em;
+    width: 49%; }
+    footer div.footer-right {
+      text-align: right; }
+    footer div.footer-left a {
+      color: #d8230d;
+      text-decoration: none; }
+      footer div.footer-left a:focus, footer div.footer-left a:active, footer div.footer-left a:hover {
+        text-decoration: underline; }

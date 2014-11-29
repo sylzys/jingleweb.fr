@@ -27,10 +27,10 @@
 	<div id='home'>
 		<div class='overlay'></div>
 		<div class='social'>
-			<ul class='menu'>
+			<ul class='social-networks'>
 				<li class='github' role='img'><a href='https://github.com/sylzys' target='blank_' title='View my Github profile'></a></li>
 				<li class='twitter' role='img'><a href='http://twitter.com/sylzys' target='blank_' title='View my Twitter profile'></a></li>
-				<li class='linkedin' role='img'><a href='http://fr.linkedin.com/in/sylvainzyssman/' target='blank_' title='View my Linkedin profile'></a></li>
+				<li class='linkedin'><a href='http://fr.linkedin.com/in/sylvainzyssman/' title='View my Linkedin profile'></a></li>
 			</ul>
 		</div>
 		<div class='content'>
@@ -115,16 +115,30 @@
 		<p>I'm currently full and will be available from early-March '14.<br/>
 			You can reach me at <a href='mailto:sylvain@zyssman.fr' title='Send me an email'>sylvain@zyssman.fr</a> or use the form below to contact me.<br/>I'll replay as soon as possible !</p>
 			<div class='form'>
-				<form action='#' method='post' name='form'>
-					<label for='name'>name :</label><input type='text' id='name' name='name' required /><br/>
-					<label for='email'>email :</label><input type='email' id='email' name='email' required/><br/>
+				<form action='toto.php' method='post' name='form' id='form'>
+					<label for='name'>name :</label><input type='text' id='name' name='name' /><br/>
+					<label for='email'>email :</label><input type='email' id='email' name='email'/><br/>
 					<label for='msg'>message :</label><textarea id='msg' name='msg'></textarea>
-					<p onclick="form.submit()"><span class='send'></span>submit</p>
-			</form>
+					<button type='submit'><p><span class='send'></span>submit</p></button>
+				</form>
+			</div>
 		</div>
 	</div>
+	<footer>
+		<div class='footer-left'>
+			Made with <3. Fork me on <a href='https://github.com/sylzys/jingleweb' title='Fork my site on Github' target='blank_'>Github</a>
+		</div>
+		<div class='footer-right'>
+			<ul class='social-networks'>
+				<li class='github' role='img'><a href='https://github.com/sylzys' target='blank_' title='View my Github profile'></a></li>
+				<li class='twitter' role='img'><a href='http://twitter.com/sylzys' target='blank_' title='View my Twitter profile'></a></li>
+				<li class='linkedin'><a href='http://fr.linkedin.com/in/sylvainzyssman/' target='blank_' title='View my Linkedin profile'></a></li>
+			</ul>
+		</div>
+	</footer>
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/isotope.pkgd.min.js"></script>
+	<script src="js/vendor/happy.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

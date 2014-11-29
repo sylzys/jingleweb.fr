@@ -16,6 +16,40 @@ body {
 .red {
 	color: $red;
 }
+.social-networks {
+	li {
+		border: 2px solid $gray;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		margin-right: 0.5em;
+		cursor: pointer;
+		a {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+		}
+		&.github {
+			background: transparent url(../img/github.png) no-repeat 45% center / 60%;
+			&:hover, &:focus, &:active {
+				background: transparent url(../img/github-active.png) no-repeat 45% center / 60%;
+			}
+		}
+		&.twitter {
+			background: transparent url(../img/twitter.png) no-repeat center center / 60%;
+			&:hover, &:focus, &:active {
+				background: transparent url(../img/twitter-active.png) no-repeat center center / 60%;
+			}
+		}
+		&.linkedin {
+			background: transparent url(../img/linkedin.png) no-repeat center center / 60%;
+			&:hover, &:focus, &:active {
+				background: transparent url(../img/linkedin-active.png) no-repeat center center / 60%;
+			}
+		}
+	}
+}
 h2 {
 	text-transform: uppercase;
 	font-size: 30px;
@@ -84,35 +118,6 @@ nav {
 		position: absolute;
 		top: 10%;
 		right: 5%;
-		ul {
-			li {
-				border: 2px solid $gray;
-				border-radius: 50%;
-				width: 40px;
-				height: 40px;
-				display: inline-block;
-				margin-right: 0.5em;
-				cursor: pointer;
-				&.github {
-					background: transparent url(../img/github.png) no-repeat center center / 60%;
-					&:hover, &:focus, &:active {
-						background: transparent url(../img/github-active.png) no-repeat center center / 60%;
-					}
-				}
-				&.twitter {
-					background: transparent url(../img/twitter.png) no-repeat center center / 60%;
-					&:hover, &:focus, &:active {
-						background: transparent url(../img/twitter-active.png) no-repeat center center / 60%;
-					}
-				}
-				&.linkedin {
-					background: transparent url(../img/linkedin.png) no-repeat center center / 60%;
-					&:hover, &:focus, &:active {
-						background: transparent url(../img/linkedin-active.png) no-repeat center center / 60%;
-					}
-				}
-			}
-		}
 	}
 	.content {
 		position: absolute;
@@ -380,6 +385,7 @@ nav {
 	background: $gray;
 	color: white;
 	text-align: center;
+	padding-bottom: 3em;
 	a{
 		color: $red;
 		text-decoration: none;
@@ -402,22 +408,36 @@ nav {
 			height: 30px;
 			border: 2px solid #4a4a4a;
 		}
+
 		label{
 			text-transform: uppercase;
 			text-align: left;
 			border: none;
 		}
-		p {
+		.unhappyMessage {
+			color: $red;
+			display: block;
+			// position: relative;
+			// top: -23px;
+			// left: 0;
+			margin-bottom: 0.5em;
+		}
+		button {
+			border-style: none;
 			display: inline-block;
 			margin-top: 1em;
+			padding: 0;
 			cursor: pointer;
-			width: 60%;
+			width: 50%;
 			text-transform: uppercase;
 			background: #35383F;
+			color: white;
+			font-size: 17px;
 			text-align: left;
+			margin-top: 2em;
 			.send {
 				display: inline-block;
-				background: #d8230d url(../img/send.png) no-repeat 60% 40% / 60%;
+				background: #d8230d url(../img/send.png) no-repeat 50% 60% / 60%;
 				width: 40px;
 				height: 40px;
 				vertical-align: middle;
@@ -425,7 +445,28 @@ nav {
 			}
 			&:hover, &:active, &:focus {
 				.send {
-					background: #d8230d url(../img/send-active.png) no-repeat 60% 40% / 60%;
+					background: #d8230d url(../img/send-active.png) no-repeat 50% 60% / 60%;
+				}
+			}
+		}
+	}
+}
+footer {
+	height: 70px;
+	div {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 1em;
+		width: 49%;
+		&.footer-right {
+			text-align: right;
+		}
+		&.footer-left {
+			a {
+				color: $red;
+				text-decoration: none;
+				&:focus, &:active, &:hover {
+					text-decoration: underline;
 				}
 			}
 		}

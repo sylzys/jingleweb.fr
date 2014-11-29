@@ -9,11 +9,36 @@ jQuery(document).ready(function($) {
             columnWidth: $container.width() / columns
         }
     });
-     $('#filters').on( 'click', '.button', function(e) {
-     	e.preventDefault();
-     	e.stopPropagation();
-     	$(this).addClass('active').siblings().removeClass('active');
-    var filterValue = $( this ).attr('data-filter');
-    $container.isotope({ filter: filterValue });
-  });
+ $('#filters').on( 'click', '.button', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $(this).addClass('active').siblings().removeClass('active');
+  var filterValue = $( this ).attr('data-filter');
+  $container.isotope({ filter: filterValue });
+});
+
+ $msg = 'This field is mandatory';
+ $form = $('#form');
+$form.isHappy({
+    fields: {
+      '#name': {
+        required: true,
+        message: $msg
+    },
+    '#email': {
+        required: true,
+        message: $msg
+    },
+    '#msg': {
+        required: true,
+        message: $msg
+    }
+}
+});
+$('input', $form).focus(function(event) {
+    $(this).next('.unhappyMessage').remove();
+});
+$('textarea', $form).focus(function(event) {
+    $(this).next('.unhappyMessage').remove();
+});
 });
