@@ -9,13 +9,10 @@ body {
 		font-weight: 700;
 	}
 }
-.overlay {
-	color: $gray;
-	opacity: 0.3;
-}
 .red {
 	color: $red;
 }
+
 .social-networks {
 	li {
 		border: 2px solid $gray;
@@ -97,31 +94,72 @@ nav {
 			a {
 				color: $gray;
 				text-decoration: none;
-			}
-			&.active, &:hover {
-				border-bottom: 2px solid $red;
-				a {
+				&:before, &:after {
+					display: inline-block;
+					opacity: 0;
+					-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+					-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+					transition: transform 0.3s, opacity 0.2s;
+				}
+				&:before {
+					margin-right: 10px;
+					content: '[';
+					color: $red;
+					-webkit-transform: translateX(20px);
+					-moz-transform: translateX(20px);
+					transform: translateX(20px);
+				}
+
+				&:after {
+					margin-left: 10px;
+					content: ']';
+					color: $red;
+					-webkit-transform: translateX(-20px);
+					-moz-transform: translateX(-20px);
+					transform: translateX(-20px);
+				}
+
+				&:hover:before,
+				&:hover:after,
+				&:focus:before,
+				&:focus:after,
+				&.active:before,
+				&.active:after {
+					opacity: 1;
+					-webkit-transform: translateX(0px);
+					-moz-transform: translateX(0px);
+					transform: translateX(0px);
+				}
+				&.active, &:hover {
 					color: $red;
 					font-weight: bold;
 				}
 			}
+			// &.active, &:hover {
+			// 	// border-bottom: 2px solid $red;
+			// 	a {
+			// 		color: $red;
+			// 		font-weight: bold;
+			// 	}
+			// }
 		}
 	}
 }
 
 #home {
 	height:100vh;
+	position: relative;
 	strong {
 		color: $red;
 	}
 	.social {
 		position: absolute;
-		top: 10%;
+		top: 0;
 		right: 5%;
 	}
 	.content {
 		position: absolute;
-		top: 40%;
+		top: 30%;
 		left: 5%;
 		font-size: 25px;
 		.contact-me {
@@ -154,7 +192,7 @@ nav {
 	}
 	.down {
 		position: absolute;
-		bottom: 30px;
+		bottom: 100px;
 		left: 50%;
 		margin-left: -32px;
 		width: 64px;
