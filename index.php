@@ -58,10 +58,10 @@
 	<div id='works'>
 		<h2>my works</h2>
 		<div id='filters'>
-			<a href='#' class='button active' title='View all Works' data-filter="*">Show all</a>
-			<a href='#' class='button' title='View Front-end Works' data-filter=".front">Front</a>
-			<a href='#' class='button' title='View Back-end Works' data-filter=".back">Back</a>
-			<a href='#' class='button' title='View Mobile Works' data-filter=".mobile">Mobile</a>
+			<a href='#' class='button cl-effect-1 active' title='View all Works' data-filter="*">Show all</a>
+			<a href='#' class='button cl-effect-1' title='View Front-end Works' data-filter=".front">Front</a>
+			<a href='#' class='button cl-effect-1' title='View Back-end Works' data-filter=".back">Back</a>
+			<a href='#' class='button cl-effect-1' title='View Mobile Works' data-filter=".mobile">Mobile</a>
 		</div>
 		<ul>
 			<li class='work mobile front back'>
@@ -114,12 +114,16 @@
 		<p>I'm currently full and will be available from early-March '14.<br/>
 			You can reach me at <a href='mailto:sylvain@zyssman.fr' title='Send me an email'>sylvain@zyssman.fr</a> or use the form below to contact me.<br/>I'll replay as soon as possible !</p>
 			<div class='form'>
-				<form action='toto.php' method='post' name='form' id='form'>
+				<form action='index.php#contact' method='post' name='form' id='form'>
 					<label for='name'>name :</label><input type='text' id='name' name='name' /><br/>
 					<label for='email'>email :</label><input type='email' id='email' name='email'/><br/>
 					<label for='msg'>message :</label><textarea id='msg' name='msg'></textarea>
-					<button type='submit'><p><span class='send'></span>submit</p></button>
+					<button type='submit' name='submit'><p><span class='send'></span>submit</p></button>
 				</form>
+				<?php if (isset($_POST['submit'])){
+					include('sendMail.php');
+				}
+				?>
 			</div>
 		</div>
 	</div>

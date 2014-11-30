@@ -27,14 +27,19 @@ jQuery(document).ready(function($) {
     },
     '#email': {
       required: true,
-      message: $msg
+      message: $msg+' and must be a valid email address',
+      test: validateEmail
     },
     '#msg': {
       required: true,
-      message: $msg
+      message: $msg,
     }
   }
 });
+ function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
  $('input', $form).focus(function(event) {
   $(this).next('.unhappyMessage').remove();
 });
