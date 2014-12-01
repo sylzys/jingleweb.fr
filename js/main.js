@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	$container = $('#works ul');
-	var columns = 2;
+	var columns = 3;
 	$container.isotope({
     resizable: true,
     itemSelector: '.work',

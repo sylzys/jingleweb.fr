@@ -66,46 +66,53 @@
 		<ul>
 			<li class='work mobile front back'>
 				<figure class="effect-sarah">
-					<img src="img/tablet.png" alt="Tutor"/>
-					<figcaption>
-						<h3>Tutor <span>Quizz</span></h3>
-						<p>Appli tutor mobile lorem ipsum</p>
-						<a href="#">View more</a>
-					</figcaption>
+					<img src="img/tutor.jpg" alt="Tutor"/>
+					<figcaption></figcaption>
 				</figure>
+				<p class='description'><span class='title'>Tutor mobile app</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia itaque, amet et. Placeat molestiae magni consequatur possimus sint cumque veritatis, omnis sapiente eius, distinctio ipsum soluta voluptates nesciunt modi maiores!</p>
+				<p class='tags'>
+					<span>Cordova</span><span>Game</span>
+				</p>
 			</li>
 			<li class='work front'>
 				<figure class="effect-sarah">
 					<img src="img/13.jpg" alt="img01"/>
 					<figcaption></figcaption>
 				</figure>
-				<p class='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia itaque, amet et. Placeat molestiae magni consequatur possimus sint cumque veritatis, omnis sapiente eius, distinctio ipsum soluta voluptates nesciunt modi maiores!</p>
+				<p class='description'><span class='title'>Agent Provocateur</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia itaque, amet et. Placeat molestiae magni consequatur possimus sint cumque veritatis, omnis sapiente eius, distinctio ipsum soluta voluptates nesciunt modi maiores!</p>
+				<p class='tags'>
+					<span class='hide'></span>
+				</p>
 			</li>
 			<li class='work back'>
 				<figure class="effect-sarah">
-					<img src="img/AP.png" alt="img01"/>
+					<img src="img/AP.jpg" alt="img01"/>
 					<figcaption></figcaption>
 				</figure>
+				<p class='description'><span class='title'>Agent Provocateur</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia itaque, amet et. Placeat molestiae magni consequatur possimus sint cumque veritatis, omnis sapiente eius, distinctio ipsum soluta voluptates nesciunt modi maiores!</p>
+				<p class='tags'>
+					<span>Cordova</span><span>Business</span>
+				</p>
 			</li>
 			<li class='work back front mobile'>
 				<figure class="effect-sarah">
 					<img src="img/SDE.png" alt="img01"/>
-					<figcaption>
-						<h3>Salon de <span>l'étudiant</span></h3>
-						<p>Appli SDE mobile lorem ipsum</p>
-						<a href="#">View more</a>
-					</figcaption>
+					<figcaption></figcaption>
 				</figure>
+				<p class='description'><span class='title'>'Salon de l'étudiant' mobile app</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia itaque, amet et. Placeat molestiae magni consequatur possimus sint cumque veritatis, omnis sapiente eius, distinctio ipsum soluta voluptates nesciunt modi maiores!</p>
+				<p class='tags'>
+					<span>Cordova</span>
+				</p>
 			</li>
 			<li class='work back'>
 				<figure class="effect-sarah">
 					<img src="img/13.jpg" alt="img01"/>
-					<figcaption>
-						<h3>plop <span>lol</span></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus recusandae, dicta vitae corporis, tempora dolorem blanditiis molestiae</p>
-						<a href="#">View more</a>
-					</figcaption>
+					<figcaption></figcaption>
 				</figure>
+				<p class='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia itaque, amet et. Placeat molestiae magni consequatur possimus sint cumque veritatis, omnis sapiente eius, distinctio ipsum soluta voluptates nesciunt modi maiores!</p>
+				<p class='tags'>
+					<span>Cordova</span>
+				</p>
 			</li>
 		</ul>
 	</div>
@@ -129,7 +136,7 @@
 	</div>
 	<footer>
 		<div class='footer-left'>
-			Made with <3. Fork me on <a href='https://github.com/sylzys/jingleweb' title='Fork my site on Github' target='blank_'>Github</a>
+			Made with &lt3. Fork me on <a href='https://github.com/sylzys/jingleweb' title='Fork my site on Github' target='blank_'>Github</a>
 		</div>
 		<div class='footer-right'>
 			<ul class='social-networks'>
