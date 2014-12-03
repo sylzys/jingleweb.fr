@@ -11,8 +11,8 @@
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300italic,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="css/reset.css"> -->
+<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<nav role='navigation'>
@@ -34,7 +34,7 @@
 		</div>
 		<div class='content'>
 			<h1>HELLO WORLD !<br/>I’M SYLVAIN, A FRENCH <strong>FULLSTACK WEB DEVELOPER</strong></h1>
-			<p class='contact-me'><span class='pen'></span><a href='#contact'>contact me</a></p>
+			<p class='contact-me'><span class='pen'></span><a href='#contact' title='hire me'>hire me</a></p>
 		</div>
 		<a href='#about' title='Learn more about me'><p class='down' role='image' aria-label='Scroll down'></p></a>
 	</div>
@@ -146,9 +146,7 @@
 			</ul>
 		</div>
 	</footer>
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/isotope.pkgd.min.js"></script>
-	<script src="js/vendor/happy.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/vendor/vendors.min.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 </html>
