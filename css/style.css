@@ -138,7 +138,7 @@ nav {
         text-decoration: none;
         color: white;
         font-size: 18px;
-        margin-left: 0.5em;
+        margin-left: 1.5em;
         vertical-align: middle; }
       #home .content .contact-me .pen {
         display: inline-block;
@@ -202,6 +202,7 @@ nav {
             text-align: center;
             display: block;
             font-size: 16px;
+            margin-bottom: 0.5em;
             font-weight: bold; }
         #works ul li.work figure {
           position: relative;
@@ -271,14 +272,14 @@ nav {
           font-size: 0;
           line-height: 0; }
   #works #filters {
-    width: 40%;
+    width: 45%;
     margin: 0 auto;
     border: 1px solid #272728;
     height: 40px;
     line-height: 2.5em;
     margin-bottom: 3em; }
     #works #filters a {
-      width: 25%;
+      width: 20%;
       height: 100%;
       display: inline-block;
       text-align: center;
@@ -423,3 +424,47 @@ footer {
       text-decoration: none; }
       footer div.footer-left a:focus, footer div.footer-left a:active, footer div.footer-left a:hover {
         text-decoration: underline; }
+
+@media screen and (max-width: 480px) {
+  h2 {
+    width: 55%; }
+
+  nav {
+    position: inherit; }
+    nav p.site-name {
+      position: relative;
+      left: 80px; }
+      nav p.site-name img {
+        margin-right: 0.5em; }
+    nav ul {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 0.5em;
+      border: 1px solid #272728;
+      width: 50%; }
+      nav ul li {
+        display: block; }
+
+  #home .down {
+    width: 54px;
+    height: 54px; }
+  #home .content .contact-me {
+    width: 48%; }
+
+  #about .content .row {
+    width: 100%; }
+
+  #works #filters {
+    width: 95%; }
+    #works #filters a {
+      font-size: 13px; }
+  #works ul li {
+    width: 90%;
+    margin-bottom: 1em; }
+
+  #contact h2 + p {
+    width: 90%;
+    margin: 0 auto; }
+  #contact .form form {
+    width: 100%; } }

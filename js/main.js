@@ -1,6 +1,12 @@
 jQuery(document).ready(function($) {
 	$container = $('#works ul');
 	var columns = 3;
+  if (window.innerWidth < 480){
+    columns = 1;
+  }
+  else if (window.innerWidth < 768){
+    columns = 2;
+  }
 	$container.isotope({
     resizable: true,
     itemSelector: '.work',
@@ -9,6 +15,11 @@ jQuery(document).ready(function($) {
       columnWidth: $container.width() / columns
     }
   });
+
+  //change "show all" filters text to fit on smatphone
+  if (window.innerWidth < 480) {
+    $('#filters > a:first-child').text('All');
+  }
  $('#filters').on( 'click', '.button', function(e) {
   e.preventDefault();
   e.stopPropagation();

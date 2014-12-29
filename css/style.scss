@@ -181,7 +181,7 @@ nav {
 				text-decoration: none;
 				color: white;
 				font-size: 18px;
-				margin-left: 0.5em;
+				margin-left: 1.5em;
 				vertical-align: middle;
 			}
 			.pen {
@@ -261,6 +261,7 @@ nav {
 						text-align: center;
 						display: block;
 						font-size: 16px;
+						margin-bottom: 0.5em;
 						font-weight: bold;
 					}
 				}
@@ -354,14 +355,14 @@ nav {
 		}
 	}
 	#filters {
-		width: 40%;
+		width: 45%;
 		margin: 0 auto;
 		border: 1px solid $gray;
 		height: 40px;
 		line-height: 2.5em;
 		margin-bottom: 3em;
 		a {
-			width: 25%;
+			width: 20%;
 			height: 100%;
 			display: inline-block;
 			text-align: center;
@@ -549,6 +550,81 @@ footer {
 					text-decoration: underline;
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h2 {
+		width: 55%;
+	}
+	nav {
+		position: inherit;
+		p {
+			&.site-name {
+				position: relative;
+				left: 80px;
+				img {
+					margin-right: 0.5em;
+				}
+			}
+		}
+		ul {
+			position: absolute;
+			left: 0;
+			top: 0;
+			padding: 0.5em;
+			border: 1px solid $gray;
+			width: 50%;
+			li {
+				display: block;
+			}
+		}
+	}
+	#home {
+		.down {
+			width: 54px;
+			height: 54px;
+		}
+		.content {
+			.contact-me {
+				width: 48%;
+			}
+		}
+	}
+	#about {
+		.content {
+			.row {
+				width: 100%;
+			}
+		}
+	}
+	#works {
+		#filters {
+			width: 95%;
+			a {
+				font-size: 13px;
+			}
+		}
+		ul {
+			li {
+				width: 90%;
+				margin-bottom: 1em;
+			}
+		}
+	}
+	#contact {
+		h2 {
+			& + p {
+				width: 90%;
+				margin: 0 auto;
+			}
+		}
+		.form {
+			form {
+				width: 100%;
+			}
+
 		}
 	}
 }
