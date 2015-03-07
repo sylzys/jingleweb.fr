@@ -5,14 +5,15 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
+	<meta name="description" content="Sylvain Zyssman's Website" />
 	<title>JingleWeb</title>
 
 <!--[if lt IE 9]> HTML5Shiv
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300italic,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="dist/css/built.min.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
 	<nav role='navigation'>
@@ -44,13 +45,20 @@
 			<div class='row'>
 				<div class='talks'>
 					<div><p class='category'>talks</p><p class='short-desc'>I like sharing what I learn and what I do. So I regularly give talks.</p></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quae delectus et cumque minus quaerat, tenetur, quam optio natus asperiores nisi dolorem ullam quisquam, nobis numquam excepturi eligendi maxime deleniti.</p>
+					<p>
+						I take part in local web events on a regular basis. I love talking there about everything related to my job, should that be technical or not.<br/>
+						Giving talks allow me to go in-depth on web stuff, helping me being more effective.<br/>
+						My talks slides and videos (if available) can be seen on <a href="http://blog.jingleweb.fr/presentations-et-conferences/" target="blank_" title="My blog"> my blog</a>.
+					</p>
 				</div>
 			</div>
 			<div class='row'>
 				<div class='meetups'>
 					<div><p class='category'>meetups</p><p class='short-desc'>I organise several meetups a year for French devs en Normandy.</p></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quae delectus et cumque minus quaerat, tenetur, quam optio natus asperiores nisi dolorem ullam quisquam, nobis numquam excepturi eligendi maxime deleniti.</p>
+					<p>
+						A good web community is one where people can meet, share, and improve all together. That's why I organize events in Normandy, such as <a href="http://caenjs.org" target="blank_" title="CaenJS Website">CaenJS</a>, <a href="http://accessiday.fr" target="blank_" title="Accessiday Website"> Accessiday</a>, or more informal ones such as "ApéroWeb", where people can meet over a drink.<br/>
+						A big, <a href="http://calvacoders.com/en/webcampers/" target="blank_" title="WebCampers website"> 3-day event</a> will be organized by 2016 by our association, Calvacoders.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -65,6 +73,78 @@
 			<a href='#' class='button cl-effect-1' title='View Work in Progress' data-filter=".wip">W.I.P</a>
 		</div>
 		<ul>
+			<li class='work wip mobile back'>
+				<figure class="effect-sarah">
+					<img src="img/opcalia.png" alt="Opcalia"/>
+					<figcaption></figcaption>
+				</figure>
+				<p class='description'><span class='title'>Opcalia</span>
+					Opcalia, a training organization, needed an effective way to create and manage their trainings, with every media and profile linked to them.
+					After a training is created on the Drupal back-end, they can download it and every medias attached on a tablet for the students. They can also grab content (photos, videos, notes...) with the tablet and send it to the back-end for archive purposes.
+					Back-end and app are linked with a custom Web-Service.
+				</p>
+				<p class='tags'>
+					<span>Cordova</span><span>Drupal</span>
+				</p>
+			</li>
+			<li class='work front'>
+				<a href="https://www.kiosktoinvest.com/" target="blank_" title="Kiosk To Invest website">
+					<figure class="effect-sarah">
+						<img src="img/KTI.jpg" alt="Kiosk To Invest"/>
+						<figcaption></figcaption>
+					</figure>
+				</a>
+				<p class='description'><span class='title'>Kiosk To Invest</span>
+					A French public organisation needed a crowdfunding platform, dedicated to businesses. Users can present their project and have investors put money to help them launch, on a secure platform.<br/>
+					I took over the existing Wordpress project, optimizing the performances and adding new functionnalities required by the customer.<br/>
+					I also acted as a CTO on this specific project.
+				</p>
+				<p class='tags'>
+					<span>Wordpress</span><span>CTO</span>
+				</p>
+			</li>
+			<li class='work mobile'>
+				<figure class="effect-sarah">
+					<img src="img/AP.jpg" alt="Agent Provocateur"/>
+					<figcaption></figcaption>
+				</figure>
+				<p class='description'><span class='title'>Agent Provocateur</span>
+					Agent Provocateur is a UK Luxury Lingerie shop. Along with several physical shops, they also have a large website, showing up-to-date collections.<br/>
+					To help the sellers be more efficient, A.P asked for an iOS app to present the current collections to them. They are able to browse through collections, models and products, to present to their customers.
+					The application was linked to the main website through a click on a product.
+				</p>
+				<p class='tags'>
+					<span>AngularJS</span><span>Cordova</span><span>Business</span>
+				</p>
+			</li>
+			<li class='work wip'>
+				<figure class="effect-sarah">
+					<img src="img/inbliss.jpg" alt="InBliss Weddings"/>
+					<figcaption></figcaption>
+				</figure>
+				<p class='description'><span class='title'>In Bliss Weddings</span>
+					In Bliss connects brides and vendors. The website needed a redesign and a change of technology used. While another French company developped it with Symfony2, I integrated the templates on their codebase, using Symfony Twig template engine and MVC architecture.<br/>
+					Besides pure HTML5 / CSS3 integration, I used JS to put animations / plugins in place, such as isotope (grid / filtering).
+				</p>
+				<p class='tags'>
+					<span>Twig</span><span>Business</span>
+				</p>
+			</li>
+			<li class='work back front'>
+				<a href="http://region-basse-normandie.fr" target="blank_" title="Normandy Council website">
+					<figure class="effect-sarah">
+						<img src="img/CRBN.jpg" alt="Région Basse-Normandie"/>
+						<figcaption></figcaption>
+					</figure>
+				</a>
+				<p class='description'><span class='title'>Région Basse-Normandie</span>
+					Normandy regional council needed a new website. We switched form Joomla to Drupal, I thus had to create a whole bunch of views, custom content-types, etc. to allow the new website to retrieve all existing functionnalities.<br/>
+					I also work on a good part of the front-end integration, on both "desktop" and RWD templates.
+				</p>
+				<p class='tags'>
+					<span>Drupal</span>
+				</p>
+			</li>
 			<li class='work mobile'>
 				<figure class="effect-sarah">
 					<img src="img/tutor.jpg" alt="Tutor"/>
@@ -79,70 +159,16 @@
 					<span>AngularJS</span><span>Cordova</span><span>Game</span>
 				</p>
 			</li>
-			<li class='work front'>
-				<figure class="effect-sarah">
-					<img src="img/KTI.jpg" alt="Kiosk To Invest"/>
-					<figcaption></figcaption>
-				</figure>
-				<p class='description'><span class='title'>Kiosk To Invest</span>
-					A French public organisation needed a crowdfunding platform, dedicated to businesses. When subscribed, users could present their business project, and have investors put money to help them launch, on a secure platform.<br/>
-					I took over the existing Wordpress project, optimizing the performances and adding new functionnalities required by the customer.<br/>
-					I also acted as a CTO on this specific project.
-				</p>
-				<p class='tags'>
-					<span>Wordpress</span><span>CTO</span>
-				</p>
-			</li>
-			<li class='work mobile'>
-				<figure class="effect-sarah">
-					<img src="img/AP.jpg" alt="Agent Provocateur"/>
-					<figcaption></figcaption>
-				</figure>
-				<p class='description'><span class='title'>Agent Provocateur</span>
-					Agent Provocateur is a Luxury Lingerie shop, based in the UK. Along with several physical shops, they also have a large website, showing up-to-date collections.<br/>
-					To help the sellers be more efficient, A.P asked for an iOS app to present the current collections to them. The sellers were able to browse through collections, models and products, to present to their customers.
-					The application was linked to the main website through a click on a product, presenting product details, price, etc.
-				</p>
-				<p class='tags'>
-					<span>AngularJS</span><span>Cordova</span><span>Business</span>
-				</p>
-			</li>
 			<li class='work mobile'>
 				<figure class="effect-sarah">
 					<img src="img/SDE.jpg" alt="Salon de l'Etudiant"/>
 					<figcaption></figcaption>
 				</figure>
-				<p class='description'><span class='title'>'Salon de l'étudiant' mobile app</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia itaque, amet et. Placeat molestiae magni consequatur possimus sint cumque veritatis, omnis sapiente eius, distinctio ipsum soluta voluptates nesciunt modi maiores!</p>
+				<p class='description'><span class='title'>'Salon de l'étudiant' mobile app</span>
+					Normandy Regional Council needed a quizz game for an exhibition. Based on renewable energies knowledge, the players had several questions, and were each time presented with a full explanation about a specific energy.
+				</p>
 				<p class='tags'>
 					<span>AngularJS</span><span>Cordova</span>
-				</p>
-			</li>
-			<li class='work back front'>
-				<figure class="effect-sarah">
-					<img src="img/CRBN.jpg" alt="Région Basse-Normandie"/>
-					<figcaption></figcaption>
-				</figure>
-				<p class='description'><span class='title'>Région Basse-Normandie</span>
-					In Bliss connects brides and vendors. The team wanted to redesign their existing website, and change the technology used. While another French company developped the website on Symfony2, I integrated the templates directly on their codebase, using Symfony Twig template engine and MVC architecture.<br/>
-					This is W.I.P, and I already worked on vendor dashboard, vendors search / compare, galeries, etc.
-					Besides pure HTML5 / CSS3 integration, I used JS to put animations / plugins in place, such as isotope (grid / filtering).
-				</p>
-				<p class='tags'>
-					<span>Drupal</span>
-				</p>
-			</li>
-			<li class='work wip'>
-				<figure class="effect-sarah">
-					<img src="img/inbliss.jpg" alt="InBliss Weddings"/>
-					<figcaption></figcaption>
-				</figure>
-				<p class='description'><span class='title'>In Bliss Weddings</span>
-					In Bliss connects brides and vendors. The team wanted to redesign their existing website, and change the technology used. While another French company developped the website on Symfony2, I integrated the templates directly on their codebase, using Symfony Twig template engine and MVC architecture.<br/>
-					This is W.I.P, and I already worked on vendor dashboard, vendors search / compare, galeries, etc.
-					Besides pure HTML5 / CSS3 integration, I used JS to put animations / plugins in place, such as isotope (grid / filtering).
-				</p>
-				<p class='tags'>
-					<span>Twig</span><span>Business</span>
 				</p>
 			</li>
 		</ul>
@@ -168,7 +194,7 @@
 	</div>
 	<footer>
 		<div class='footer-left'>
-			Made with &lt3. Fork me on <a href='https://github.com/sylzys/jingleweb' title='Fork my site on Github' target='blank_'>Github</a>
+			Made with &lt;3. Fork me on <a href='https://github.com/sylzys/jingleweb' title='Fork my site on Github' target='blank_'>Github</a>
 		</div>
 		<div class='footer-right'>
 			<ul class='social-networks'>
@@ -178,7 +204,7 @@
 			</ul>
 		</div>
 	</footer>
-	<script src="js/vendor/vendors.min.js"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="js/vendor/vendors.min.js"></script> -->
+	<script src="dist/js/built.min.js"></script>
 </body>
 </html>
