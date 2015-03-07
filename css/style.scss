@@ -561,77 +561,102 @@ footer {
 	}
 }
 
-@media screen and (max-width: 480px) {
-	h2 {
-		width: 55%;
-	}
-	nav {
-		position: inherit;
-		p {
-			&.site-name {
-				position: relative;
-				left: 80px;
-				img {
-					margin-right: 0.5em;
+	@media screen and (max-width: 480px) {
+		h2 {
+			width: 55%;
+		}
+		.cl-effect-1 {
+			&:before {
+				margin-right: 5px;
+			}
+			&:after {
+				margin-left: 5px;
+			}
+		}
+		nav {
+			position: inherit;
+			p {
+				&.site-name {
+					position: relative;
+					// left: 80px;
+					img {
+						margin-right: 0.5em;
+					}
+				}
+			}
+			ul {
+				z-index: 2;
+				li {
+					font-size: 16px;
 				}
 			}
 		}
-		ul {
-			position: absolute;
-			left: 0;
-			top: 0;
-			padding: 0.5em;
-			border: 1px solid $gray;
-			width: 50%;
-			li {
-				display: block;
+		#home {
+			.down {
+				width: 54px;
+				height: 54px;
+			}
+			.social {
+				left: 50%;
+				width: 160px;
+				margin-left: -80px;
+			}
+			.content {
+				.contact-me {
+					width: 48%;
+				}
 			}
 		}
-	}
-	#home {
-		.down {
-			width: 54px;
-			height: 54px;
-		}
-		.content {
-			.contact-me {
-				width: 48%;
+		#about {
+			.content {
+				.row {
+					width: 100%;
+					.talks {
+						div {
+							background: url(../img/talks.png) center 25% no-repeat #fff;
+							background-size: 25%;
+						}
+					}
+					.meetups {
+						div {
+							background: url(../img/ppl.png) center 25% no-repeat #fff;
+							background-size: 25%;
+						}
+					}
+				}
 			}
 		}
-	}
-	#about {
-		.content {
-			.row {
-				width: 100%;
+		#works {
+			#filters {
+				.cl-effect-1{
+					&:first-child {
+						font-size: 11px !important;
+					}
+				}
+				width: 95%;
+				a {
+					font-size: 13px;
+				}
+			}
+			ul {
+				li {
+					width: 90%;
+					margin-bottom: 1em;
+				}
 			}
 		}
-	}
-	#works {
-		#filters {
-			width: 95%;
-			a {
-				font-size: 13px;
+		#contact {
+			h2 {
+				& + p {
+					width: 90%;
+					margin: 0 auto;
+				}
 			}
-		}
-		ul {
-			li {
-				width: 90%;
-				margin-bottom: 1em;
-			}
-		}
-	}
-	#contact {
-		h2 {
-			& + p {
-				width: 90%;
-				margin: 0 auto;
-			}
-		}
-		.form {
-			form {
-				width: 100%;
-			}
+			.form {
+				form {
+					width: 100%;
+				}
 
+			}
 		}
 	}
-}

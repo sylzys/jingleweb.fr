@@ -433,34 +433,45 @@ footer {
   h2 {
     width: 55%; }
 
+  .cl-effect-1:before {
+    margin-right: 5px; }
+  .cl-effect-1:after {
+    margin-left: 5px; }
+
   nav {
     position: inherit; }
     nav p.site-name {
-      position: relative;
-      left: 80px; }
+      position: relative; }
       nav p.site-name img {
         margin-right: 0.5em; }
     nav ul {
-      position: absolute;
-      left: 0;
-      top: 0;
-      padding: 0.5em;
-      border: 1px solid #272728;
-      width: 50%; }
+      z-index: 2; }
       nav ul li {
-        display: block; }
+        font-size: 16px; }
 
   #home .down {
     width: 54px;
     height: 54px; }
+  #home .social {
+    left: 50%;
+    width: 160px;
+    margin-left: -80px; }
   #home .content .contact-me {
     width: 48%; }
 
   #about .content .row {
     width: 100%; }
+    #about .content .row .talks div {
+      background: url(../img/talks.png) center 25% no-repeat white;
+      background-size: 25%; }
+    #about .content .row .meetups div {
+      background: url(../img/ppl.png) center 25% no-repeat white;
+      background-size: 25%; }
 
   #works #filters {
     width: 95%; }
+    #works #filters .cl-effect-1:first-child {
+      font-size: 11px !important; }
     #works #filters a {
       font-size: 13px; }
   #works ul li {

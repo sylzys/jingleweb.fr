@@ -6,6 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Sylvain Zyssman's Website" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>JingleWeb</title>
 
 <!--[if lt IE 9]> HTML5Shiv
@@ -13,7 +14,6 @@
 <![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300italic,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="dist/css/built.min.css">
-<!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
 	<nav role='navigation'>
@@ -28,8 +28,8 @@
 	<div id='home'>
 		<div class='social'>
 			<ul class='social-networks'>
-				<li class='github' role='img'><a href='https://github.com/sylzys' target='blank_' title='View my Github profile'></a></li>
-				<li class='twitter' role='img'><a href='http://twitter.com/sylzys' target='blank_' title='View my Twitter profile'></a></li>
+				<li class='github'><a href='https://github.com/sylzys' target='blank_' title='View my Github profile'></a></li>
+				<li class='twitter'><a href='http://twitter.com/sylzys' target='blank_' title='View my Twitter profile'></a></li>
 				<li class='linkedin'><a href='http://fr.linkedin.com/in/sylvainzyssman/' title='View my Linkedin profile'></a></li>
 			</ul>
 		</div>
@@ -37,7 +37,7 @@
 			<h1>HELLO WORLD !<br/>I’M SYLVAIN, A FRENCH <strong>FULLSTACK WEB DEVELOPER</strong></h1>
 			<p class='contact-me'><span class='pen'></span><a href='#contact' title='hire me'>hire me</a></p>
 		</div>
-		<a href='#about' title='Learn more about me'><p class='down' role='image' aria-label='Scroll down'></p></a>
+		<a href='#about' title='Learn more about me'><p class='down' aria-label='Scroll down'></p></a>
 	</div>
 	<div id="about">
 		<h2>about me</h2>
@@ -175,9 +175,9 @@
 	</div>
 	<div id='contact'>
 		<h2>contact me</h2>
-		<p>I'm currently full and will be available from early-March '14.<br/>
-			You can reach me at <a href='mailto:sylvain@zyssman.fr' title='Send me an email'>sylvain@zyssman.fr</a> or use the form below to contact me.<br/>I'll replay as soon as possible !</p>
-			<div class='form'>
+		<p>I'm currently full and will be available from April '15.<br/><br/>
+			Feel free to reach me at <a href='mailto:sylvain@zyssman.fr' title='Send me an email'>sylvain[AT]zyssman.fr</a><br/>I'll replay as soon as possible !</p>
+			<!-- <div class='form'>
 				<form action='index.php#contact' method='post' name='form' id='form'>
 					<label for='name'>name :</label><input type='text' id='name' name='name' /><br/>
 					<label for='email'>email :</label><input type='email' id='email' name='email'/><br/>
@@ -189,7 +189,7 @@
 					include('sendMail.php');
 				}
 				?>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<footer>
@@ -198,13 +198,13 @@
 		</div>
 		<div class='footer-right'>
 			<ul class='social-networks'>
-				<li class='github' role='img'><a href='https://github.com/sylzys' target='blank_' title='View my Github profile'></a></li>
-				<li class='twitter' role='img'><a href='http://twitter.com/sylzys' target='blank_' title='View my Twitter profile'></a></li>
+				<li class='github'><a href='https://github.com/sylzys' target='blank_' title='View my Github profile'></a></li>
+				<li class='twitter'><a href='http://twitter.com/sylzys' target='blank_' title='View my Twitter profile'></a></li>
 				<li class='linkedin'><a href='http://fr.linkedin.com/in/sylvainzyssman/' target='blank_' title='View my Linkedin profile'></a></li>
 			</ul>
 		</div>
 	</footer>
-	<!-- <script src="js/vendor/vendors.min.js"></script> -->
 	<script src="dist/js/built.min.js"></script>
+	<noscript>Your browser does not support JavaScript!</noscript>
 </body>
 </html>

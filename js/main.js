@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 	$container = $('#works ul');
 	var columns = 3;
-  if (window.innerWidth < 480){
+  if (window.innerWidth <= 480){
     columns = 1;
   }
   else if (window.innerWidth < 768){
